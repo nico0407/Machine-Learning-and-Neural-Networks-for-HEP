@@ -6,28 +6,28 @@ Complexity and learning curve analyses are part of the visual analytics tools th
 
 
 # Table of Contents
-1. [About_the_project](#About the project)
+1. [About_the_project](#About)
     1. [Dataset](#Dataset)
 3. [Implementation](#Implementation)
-    1. [ML models comparison](#ML models comparison)
-    2. [ML comparison variating training dataset size](#ML comparison variating training dataset size)
-    3. [Neural Network performance](#Neural Network performance)
-    4. [Neural Network performance variating training dataset size](#Neural Network performance variating training dataset size)
+    1. [ML model comparison](#MLmodelcomparison)
+    2. [ML comparison variating training dataset size](#MLcomparisonvariatingtrainingdatasetsize)
+    3. [Neural Network performance](#NeuralNetworkperformance)
+    4. [Neural Network performance variating training dataset size](#NeuralNetworkperformancevariatingtrainingdatasetsize)
 
 
-## About the project <a name="About the project"></a>
+## About the project <a name="About"></a>
 
 ### Dataset <a name="Dataset"></a>
 
 ## Implementation <a name="Implementation"></a>
 
-### ML model comparison <a name="ML model comparison"></a>
+### ML model comparison <a name="MLmodelcomparison"></a>
 
-### ML comparison variating training dataset size <a name="ML comparison variating training dataset size"></a>
+### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
-### Neural Network performance <a name="Neural Network performance"></a>
+### Neural Network performance <a name="NeuralNetworkperformance"></a>
 
-### Neural Network performance variating training dataset size <a name="Neural Network performance variating training dataset size"></a>
+### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
 
 
