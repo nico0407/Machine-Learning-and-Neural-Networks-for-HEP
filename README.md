@@ -31,7 +31,12 @@ Is composed of 5000000 rows and 7 columns:
 + Inner energy(GeV)
 + Outer energy(GeV)
 
-![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png "text")
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png)
+
+Particular importance also has the plot feaguring the beta value of a particle(v/c) against the momentum of this one.
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_betavsmomentum.png)
+
+It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. That's why in HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
 
 
 ## Implementation <a name="Implementation"></a>
