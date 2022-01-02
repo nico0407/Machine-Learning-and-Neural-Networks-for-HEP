@@ -31,7 +31,7 @@ Is composed of 5000000 rows and 7 columns:
 + Inner energy(GeV)
 + Outer energy(GeV)
 
-Some photos attached
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png "text")
 
 
 ## Implementation <a name="Implementation"></a>
