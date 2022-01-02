@@ -1,6 +1,6 @@
 # Uni_project
 
-Collection of different Deep Learning models applied to a particle dataset using Keras
+Collection of different Machine Learning models and neural network structures applied to a particle dataset using Keras.
 
 
 
