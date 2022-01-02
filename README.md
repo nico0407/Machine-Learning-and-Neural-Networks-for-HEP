@@ -60,6 +60,15 @@ The models utilized were the following:
 + Standard D
 + Rnadom Forest Classifier
 
+For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot has two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
+The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth)
+
+Confronting the two curves one can check if at the end of the time of treining and validating the model predict well the data samples.
+
+In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves.
+At the end of the fitting process the discrepance between the two has to be quite low.
+**put the bias and variance
+
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
