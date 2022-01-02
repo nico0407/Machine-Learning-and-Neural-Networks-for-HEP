@@ -38,6 +38,7 @@ Particular importance also has the plot feaguring the beta value of a particle(v
 
 It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. That's why in HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
 
+The rest of the images are left into the specific folder of Data visualization
 
 ## Implementation <a name="Implementation"></a>
 A juppiter notebook was used for a better manipolation of the script. Due to the possibility to run the code piece by piece it was possible to do more test on the models accuracy without run everytime the whole file given the huge structure of this one.
@@ -107,52 +108,7 @@ For each step was implemented the computation and the conseguent plot of validat
 
 
 
-# Table of contents
-1. [Introduction](#introduction)
-2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
-
-## This is the introduction <a name="introduction"></a>
-Some introduction text, formatted in heading 2 style
-
-## Some paragraph <a name="paragraph1"></a>
-The first paragraph text
-
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
-
-## Another paragraph <a name="paragraph2"></a>
-The second paragraph text
 
 
 
-# H1
-## H2
-### H3
-#### H4
-##### H5
 
-Alt-H1
-======
-
-Alt-H2
-------
-
-Lists
-1. First ordered list item
-2. Another item
-⋅⋅* Unordered sub-list. 
-1. Actual numbers don't matter, just that it's a number
-⋅⋅1. Ordered sub-list
-4. And another item.
-
-⋅⋅⋅You can have properly indented paragraphs within list items. Notice the blank line above, and the leading spaces (at least one, but we'll use three here to also align the raw Markdown).
-
-⋅⋅⋅To have a line break without a paragraph, you will need to use two trailing spaces.⋅⋅
-⋅⋅⋅Note that this line is separate, but within the same paragraph.⋅⋅
-⋅⋅⋅(This is contrary to the typical GFM line break behaviour, where trailing spaces are not required.)
-
-* Unordered list can use asterisks
-- Or minuses
-+ Or pluses
