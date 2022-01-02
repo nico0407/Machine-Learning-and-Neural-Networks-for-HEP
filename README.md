@@ -6,16 +6,23 @@ Complexity and learning curve analyses are part of the visual analytics tools th
 
 
 # Table of Contents
-1. [Example](#example)
-2. [Example2](#example2)
-3. [Third Example](#third-example)
-4. [Fourth Example](#fourth-examplehttpwwwfourthexamplecom)
+1. [About the project](#About the project)
+    1. [Dataset](#Dataset)
+3. [Implementation](#Implementation)
+    1. [ML models comparison](#ML models comparison)
+    2. [ML comparison variating training dataset size](#ML comparison variating training dataset size)
+    3. [Neural Network performance](#Neural Network performance)
+    4. [Neural Network performance variating training dataset size](#Neural Network performance variating training dataset size)
 
 
-## Example
-## Example2
-## Third Example
-## [Fourth Example](http://www.fourthexample.com) 
+## About the project
+### Datasert
+## Implementation
+### ML model comparison 
+### ML comparison variating training dataset size
+### Neural Network performance
+### Neural Network performance variating training dataset size
+
 
 
 
