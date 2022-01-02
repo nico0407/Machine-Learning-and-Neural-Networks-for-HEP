@@ -95,7 +95,8 @@ Also here it's been done a study on the better value for the hyperparameters, te
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
-Also in the neural network section was done a variation in the training dataset.
+Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given.
+For each step was implemented the computation and the conseguent plot of validation and training curve and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
 
 
 
