@@ -1,7 +1,8 @@
 # Uni_project
 
 Collection of different Machine Learning models and neural network structures applied to a particle dataset using Keras.
-
+The aim of the project is to focus on how to make the better choice of a suitable ML algorithm for the job at hand.
+Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the merits of various ML algorithms.
 
 
 
