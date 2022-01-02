@@ -69,12 +69,34 @@ In particular one can have cases of overfitting, when the model approximate too 
 At the end of the fitting process the discrepance between the two has to be quite low.
 **put the bias and variance
 
+For each model is also provided the ROC curve 
+
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
+The project present also an other comparison between models. In this case was applied a cut in the dataset available for training each model.
+By step of 10% of the data at the time the model was fed, and at each step calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
+
+Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
+
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
+In the NEural Network section some functions were defined.
+
++ A section for building the model. In particular this provides two dense layer interprised by dropout layers. This function allows to choose the number of nodes for both of the hidden layers, the learing rate, the dropout probability and even the oprimizer function. At the end it also compile the model.
++ An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. wile the model is fitted on the training data at the same time is also validated with the validation data set. At the end plot toghether learning curves for training and validation, both the accuracy and the loss one.
++ In the last section is implemented the testing for the model with the "evaluate" function of the model, that provide a score of the model also on the testing data set. That' much useful for determine if a model overfit or underfit, if has an enough good predictive power.
+
+After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
+
+This is followed by a section in wich there is a variation of the hyperparameters of the model, such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific bvalues for reduce the complexity of the model built.
+
+There is also the implementation of an other Neural NEtwork to improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
+Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. An improvement in the learning curve shows up.
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
+
+Also in the neural network section was done a variation in the training dataset.
+
 
 
 
