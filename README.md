@@ -48,10 +48,17 @@ The library used are:
 The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'(electrons, protons and kaons) id into 0.
 Then given the extreme number of rows in first analysis were considered just the first 50000 ones.
 
-In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id column whose role is as a target to understand is the classification is done in the right way or not, instead the otherone whas inside all the other six remanent columns.
+In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the modified id column whose role is as a target to understand is the classification is done in the right way or not, instead the otherone whas inside all the other six remanent columns.
 Then was implemented a data splitting into test and train with a test_size equal to 0.30 and after that an other one, dividing the test dataset into a validation and a test one. That was done giving them the same dimension.
 
 ### ML model comparison <a name="MLmodelcomparison"></a>
+The models utilized were the following:
++ Decision Tree Classifier, used with both gini and entropy criterion
++ Ada Boost Classifier
++ Logistic Regression
++ K neighbors Classifier
++ Standard D
++ Rnadom Forest Classifier
 
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
