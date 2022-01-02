@@ -6,7 +6,7 @@ Complexity and learning curve analyses are part of the visual analytics tools th
 
 
 # Table of Contents
-1. [About the project](#About the project)
+1. [About_the_project](#About the project)
     1. [Dataset](#Dataset)
 3. [Implementation](#Implementation)
     1. [ML models comparison](#ML models comparison)
