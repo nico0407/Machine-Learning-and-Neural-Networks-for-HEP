@@ -93,6 +93,9 @@ accuracy_score                                                                  
 
 The project present also an other comparison between models. In this case was applied a cut in the dataset available for training each model.
 By step of 10% of the data at the time the model was fed, and at each step calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
+For semplicity is reported just an example of this, the other images are available in the specific repository section.
+
+![alt text](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/training_variations/knn10.png)
 
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
 
