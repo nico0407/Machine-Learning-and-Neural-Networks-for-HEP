@@ -78,6 +78,12 @@ At the end of the fitting process the discrepance between the two has to be quit
 For each model is also provided the ROC curve 
 
 
+At the end the accuracy was computed via the function "accuracy_score" and also via the "f1_score" one, the results are reported below.
+
+Solarized dark                                                                                             |  Solarized Ocean
+:---------------------------------------------------------------------------------------------------------:|:-------------------------:
+![](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/comparison1.png)  |  ![](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/comparison1.png)
+
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
 The project present also an other comparison between models. In this case was applied a cut in the dataset available for training each model.
