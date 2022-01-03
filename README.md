@@ -34,6 +34,7 @@ Is composed of 5000000 rows and 7 columns:
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png)
 
 Particular importance also has the plot feaguring the beta value of a particle(v/c) against the momentum of this one.
+
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_betavsmomentum.png)
 
 It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. That's why in HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
@@ -95,7 +96,7 @@ The project present also an other comparison between models. In this case was ap
 By step of 10% of the data at the time the model was fed, and at each step calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
-![alt text](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/training_variations/knn10.png)
+![alt-text](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/training_variations/knn10.png)
 
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
 
