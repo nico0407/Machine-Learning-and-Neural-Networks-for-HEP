@@ -109,6 +109,8 @@ In the Neural Network section some functions were defined.
 + An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. wile the model is fitted on the training data at the same time is also validated with the validation data set. At the end plot toghether learning curves for training and validation, both the accuracy and the loss one.
 + In the last section is implemented the testing for the model with the "evaluate" function of the model, that provide a score of the model also on the testing data set. That' much useful for determine if a model overfit or underfit, if has an enough good predictive power.
 
+Here is reported an example of the Adam optimizer with the corrispective ROC curve.
+
 After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
 This is followed by a section in wich there is a variation of the hyperparameters of the model, such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific bvalues for reduce the complexity of the model built.
