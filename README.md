@@ -6,19 +6,19 @@ Complexity and learning curve analyses are part of the visual analytics tools th
 
 
 # Table of Contents
-1. [About_the_project](#About)
-    1. [Dataset](#Dataset)
-3. [Implementation](#Implementation)
-    1. [ML model comparison](#MLmodelcomparison)
-    2. [ML comparison variating training dataset size](#MLcomparisonvariatingtrainingdatasetsize)
-    3. [Neural Network performance](#NeuralNetworkperformance)
-    4. [Neural Network performance variating training dataset size](#NeuralNetworkperformancevariatingtrainingdatasetsize)
+- [About_the_project](#About)
+    - [Dataset](#Dataset)
+- [Implementation](#Implementation)
+    - [ML model comparison](#MLmodelcomparison)
+    - [ML comparison variating training dataset size](#MLcomparisonvariatingtrainingdatasetsize)
+    - [Neural Network performance](#NeuralNetworkperformance)
+    - [Neural Network performance variating training dataset size](#NeuralNetworkperformancevariatingtrainingdatasetsize)
 
 
 ## About the project <a name="About"></a>
 
 ### Dataset <a name="Dataset"></a>
-The Dataset used, 'pid-5M' is a dataset availabkle online and downloaded from Kaggle's dataset page. (https://www.kaggle.com/naharrison/particle-identification-from-detector-responses)
+The Dataset used, 'pid-5M' is a dataset available online and downloaded from Kaggle's dataset page. (https://www.kaggle.com/naharrison/particle-identification-from-detector-responses)
 
 That's a simplified dataset of a GEANT based simulation for electron-proton inelastic scattering measured by a particle detector system.
 It simulates in the final state four particle types with an id number associated - positron (-11), pion (211), kaon (321), and proton (2212); six detector responses. Some detector responses are zero due to detector inefficiencies or incomplete geometric coverage of the detector.
@@ -44,11 +44,11 @@ The rest of the images are left into the specific folder of Data visualization
 ## Implementation <a name="Implementation"></a>
 A juppiter notebook was used for a better manipolation of the script. Due to the possibility to run the code piece by piece it was possible to do more test on the models accuracy without run everytime the whole file given the huge structure of this one.
 The library used are:
-+ Pandas for manipolation of the dataframe
++ Pandas
 + Numpy
 + Matplotlib
 + Seaborn
-+ Sklearn for the ML model implementation
++ Sklearn
 + Keras
 + Tensorflow
 
@@ -160,5 +160,8 @@ something | somenthing
 
 
 
+
+In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
+In later sections, we will discuss the details of particularly useful models, and throughout will talk about what tuning is available for these models and how these free parameters affect model complexity. Keep the lessons of this section in mind as you read on and learn about these machine learning approaches!
 
 
