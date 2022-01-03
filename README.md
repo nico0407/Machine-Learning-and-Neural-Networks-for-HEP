@@ -142,9 +142,18 @@ ACCURACY                                                                        
 
 Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given.
 For each step was implemented the computation and the conseguent plot of validation and training curve and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
+First of all what changed was the fraction of the whole data for training the model, that goes from 10% to 100%, leaving validation and testing data sets unaltered.
+
+something | somenthing
+:-------:|:----------:|
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001ROC.png)
 
 
+After that the fraction of the total data available for training, testing, and validation was changed simultaneously, manteining the proportions decided at the beginning the same(training : validation : testing = 70 : 15 : 15)
 
+something | somenthing
+:-------:|:----------:|
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/toality_fitting_modification.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/toality_fitting_modificationROC.png)
 
 
 
