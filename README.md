@@ -82,9 +82,9 @@ At the end the accuracy was computed via the function "accuracy_score" and also 
 
 ![alt-text-1](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png) ![alt-text-2](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png)
 
-Solarized dark             |  Solarized Ocean
-:-------------------------:|:-------------------------:
-![](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png)  |  ![](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png)
+accuracy_score                                                                                                  |  f1_score
+:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
+![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png)  |  ![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png)
 
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
