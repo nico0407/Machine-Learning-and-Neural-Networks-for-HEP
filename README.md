@@ -87,7 +87,7 @@ At the end the accuracy was computed via the function "accuracy_score" and also 
 
 accuracy_score                                                                                                  |  f1_score
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
-![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png)  |  ![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png)
+![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png "right")
 
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
@@ -96,7 +96,7 @@ The project present also an other comparison between models. In this case was ap
 By step of 10% of the data at the time the model was fed, and at each step calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
-![alt-text](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/training_variations/knn10.png)
+![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png "text")
 
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
 
