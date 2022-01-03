@@ -176,3 +176,24 @@ The model on the right attempts to fit a high-order polynomial through the data.
 For high-bias models, the performance of the model on the validation set is similar to the performance on the training set.
 
 For high-variance models, the performance of the model on the validation set is far worse than the performance on the training set.
+
+-------
+The Training Set
+
+It is the set of data that is used to train and make the model learn the hidden features/patterns in the data.
+In each epoch, the same training data is fed to the neural network repeatedly, and the model continues to learn the features of the data.
+The training set should have a diversified set of inputs so that the model is trained in all scenarios and can predict any unseen data sample that may appear in the future.
+-----
+The Validation Set
+
+The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
+This validation process gives information that helps us tune the model’s hyperparameters and configurations accordingly. It is like a critic telling us whether the training is moving in the right direction or not.
+The model is trained on the training set, and, simultaneously, the model evaluation is performed on the validation set after every epoch.
+The main idea of splitting the dataset into a validation set is to prevent our model from overfitting i.e., the model becomes really good at classifying the samples in the training set but cannot generalize and make accurate classifications on the data it has not seen before. 
+
+-------
+The Test Set
+
+The test set is a separate set of data used to test the model after completing the training.
+It provides an unbiased final model performance metric in terms of accuracy, precision, etc. To put it simply, it answers the question of "How well does the model perform?"
+----
