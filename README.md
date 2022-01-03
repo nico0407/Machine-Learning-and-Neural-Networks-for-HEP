@@ -117,10 +117,15 @@ accuracy_score                                                                  
 
 After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
+
+
 This is followed by a section in wich there is a variation of the hyperparameters of the model, such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific bvalues for reduce the complexity of the model built.
 
 There is also the implementation of an other Neural Network to improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
-Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. An improvement in the learning curve shows up.
+Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. An improvement in the learning curve shows up, and is reported in the following gif.
+
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
