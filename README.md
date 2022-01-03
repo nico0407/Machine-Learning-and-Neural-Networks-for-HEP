@@ -64,7 +64,7 @@ The models utilized were the following:
 + Ada Boost Classifier
 + Logistic Regression
 + K neighbors Classifier
-+ Standard D
++ SGDC Classifier
 + Rnadom Forest Classifier
 
 For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot has two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
