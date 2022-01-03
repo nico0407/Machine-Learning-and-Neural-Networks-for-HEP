@@ -110,6 +110,10 @@ In the Neural Network section some functions were defined.
 + In the last section is implemented the testing for the model with the "evaluate" function of the model, that provide a score of the model also on the testing data set. That' much useful for determine if a model overfit or underfit, if has an enough good predictive power.
 
 Here is reported an example of the Adam optimizer with the corrispective ROC curve.
+accuracy_score                                                                                                  |  f1_score |ROC
+:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50ROC.png)
+
 
 After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
