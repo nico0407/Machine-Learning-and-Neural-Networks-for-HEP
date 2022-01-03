@@ -111,33 +111,32 @@ In the Neural Network section some functions were defined.
 
 Here is reported an example of the Adam optimizer with the corrispective ROC curve.
 
-accuracy_score                                                                                                  |  f1_score |ROC
+ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/first_models/Adam50ROC.png)
+
 
 
 After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
+Moreover was applied a change contemporary in the number of nodes per layer and into the number of epochs of run usinf the Adam optimizer. In that case an improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
 
-This is followed by a section in wich there is a variation of the hyperparameters of the model, such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific bvalues for reduce the complexity of the model built.
+![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
+
+This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
 
 There is also the implementation of an other Neural Network to improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
 Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
 
-accuracy_score                                                                                                  |  f1_score |ROC
+ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200ROC.png)
 
-accuracy_score                                                                                                  |  f1_score |ROC
+ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100ROC.png)
-
-
-An improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
-
-![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
