@@ -87,7 +87,7 @@ At the end the accuracy was computed via the function "accuracy_score" and also 
 
 accuracy_score                                                                                                  |  f1_score
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
-![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png "right")
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare1.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare2.png "right")
 
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
