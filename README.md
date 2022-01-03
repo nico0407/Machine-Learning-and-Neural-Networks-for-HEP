@@ -83,8 +83,6 @@ For each model is also provided the ROC curve
 At the end the accuracy was computed via the function "accuracy_score" and also via the "f1_score" one, the results are reported below.
 
 
-![alt-text-1](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare1.png) ![alt-text-2](https://github.com/nico0407/Uni_project/tree/main/images/model_comparison/comparison/compare2.png)
-
 accuracy_score                                                                                                  |  f1_score
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare1.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare2.png "right")
@@ -99,6 +97,10 @@ For semplicity is reported just an example of this, the other images are availab
 ![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png "text")
 
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
+Also in that case is presented just one case, the rest are available in the images folder section of the repository
+
+![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curve_training_changing/ROC_RFC10.png)
+
 
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 In the NEural Network section some functions were defined.
