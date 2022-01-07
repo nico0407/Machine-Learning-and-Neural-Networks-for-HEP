@@ -1,7 +1,7 @@
 # Uni_project
 
 Collection of different Machine Learning models and neural network structures applied to a particle dataset using Keras, Tensorflow and Sklearn.
-The aim of the project is to focus on how to make the better choice of a suitable ML algorithm for the job at hand.
+The aim of the project is to focus on how to make the better choice of a suitable ML algorithm.
 Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the merits of various ML algorithms.
 
 
@@ -33,11 +33,11 @@ Is composed of 5000000 rows and 7 columns:
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png)
 
-Particular importance also has the plot feaguring the beta value of a particle(v/c) against the momentum of this one.
+Is also reported the following plot feaguring the beta value(v/c) of a particle against the momentum of this one.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_betavsmomentum.png)
 
-It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. That's why in HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
+It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. In HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
 
 The rest of the images are left into the specific folder of Data visualization
 
@@ -55,8 +55,8 @@ The library used are:
 The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'(electrons, protons and kaons) id into 0.
 Then given the extreme number of rows in first analysis were considered just the first 50000 ones.
 
-In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the modified id column whose role is as a target to understand is the classification is done in the right way or not, instead the otherone whas inside all the other six remanent columns.
-Then was implemented a data splitting into test and train with a test_size equal to 0.30 and after that an other one, dividing the test dataset into a validation and a test one. That was done giving them the same dimension.
+In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column whose role is as a target to understand is the classification is done in the right way or not, instead the other one whas inside all the other six remanent columns.
+Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension.
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
 This validation process gives information that helps us tune the model’s hyperparameters and configurations accordingly.
@@ -75,19 +75,19 @@ The models utilized were the following:
 + Rnadom Forest Classifier
 
 For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot has two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
-The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth)
+The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
-Confronting the two curves one can check if at the end of the time of treining and validating the model predict well the data samples.
+Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples.
 
-In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves.
-At the end of the fitting process the discrepance between the two has to be quite low.
+In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting.
+At the end of the fitting process the discrepance between the two has to be quite low and has to decrease with the rinning time in order to have a good working model.
 
 put the bias and variance
 
 For each model is also provided the ROC curve 
 
 
-At the end the accuracy was computed via the function "accuracy_score" and also via the "f1_score" one, the results are reported below.
+At the end the accuracy was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
 Was choosen to use also the latter one because combine inside two other metrix such as recall_score and precision_score, so the result of f1_score will be high only if both recall and precision are high.
  
 
