@@ -100,23 +100,23 @@ accuracy_score                                                                  
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
 The project present also an other comparison between models. In this case was applied a cut in the dataset available for training each model.
-By step of 10% of the data at the time the model was fed, and at each step calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
+In that case the model was fed by step of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
 ![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png "text")
 
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
-Also in that case is presented just one case, the rest are available in the images folder section of the repository
+Also in that case is presented just one case, the rest are available in the images folder section of the repository.
 
 ![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curve_training_changing/ROC_RFC10.png)
 
 
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
-In the Neural Network section some functions were defined.
+The study was done also using neural network models, and in thi section some functions were defined.
 
 + A function for building the model. In particular this provides two dense layer interprised by dropout layers. This function allows to choose the number of nodes for both of the hidden layers, the learing rate, the dropout probability and even the oprimizer function. At the end it also compile the model.
-+ An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. wile the model is fitted on the training data at the same time is also validated with the validation data set. At the end plot toghether learning curves for training and validation, both the accuracy and the loss one.
-+ In the last section is implemented the testing for the model with the "evaluate" function of the model, that provide a score of the model also on the testing data set. That' much useful for determine if a model overfit or underfit, if has an enough good predictive power.
++ An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
++ In the last section is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has an enough good predictive power.
 
 Here is reported an example of the Adam optimizer with the corrispective ROC curve.
 
@@ -126,11 +126,11 @@ ACCURACY                                                                        
 
 
 
-After some trial of esecution a comparison between the oprimizer is provided, both with the use of the evaluate function described in the testing section above and with the f1_score function.
+After some trial of esecution was done a comparison between the oprimizer, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
-Moreover was applied a change contemporary in the number of nodes per layer and into the number of epochs of run usinf the Adam optimizer. In that case an improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
+Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
@@ -149,7 +149,7 @@ ACCURACY                                                                        
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
-Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given.
+Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given. Eì VERO?!?!?
 For each step was implemented the computation and the conseguent plot of validation and training curve and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
 First of all what changed was the fraction of the whole data for training the model, that goes from 10% to 100%, leaving validation and testing data sets unaltered.
 
@@ -158,7 +158,9 @@ something | somenthing
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001ROC.png)
 
 
-After that the fraction of the total data available for training, testing, and validation was changed simultaneously, manteining the proportions decided at the beginning the same(training : validation : testing = 70 : 15 : 15)
+After this trial then, the fraction of the total data available for training, testing, and validation was changed simultaneously, manteining the proportions decided at the beginning the same(training : validation : testing = 70 : 15 : 15).
+
+So in that case is not only changing the training set, but all the available amount of data for building the model.
 
 something | somenthing
 :-------:|:----------:|
