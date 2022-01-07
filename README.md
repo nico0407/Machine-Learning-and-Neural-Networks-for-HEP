@@ -130,13 +130,15 @@ ACCURACY                                                                        
 
 
 
-After some trial of esecution was done a comparison between the oprimizer, both with the use of the evaluate function described in the testing section above and with the f1_score function.
+After some trial of esecution, was done a comparison between the oprimizer, both with the use of the evaluate function described in the testing section above and with the f1_score function.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
 Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
+
+The neural network built with Adam optimizer works well in prediction, good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. evaluation score is about 0.976??
 
 This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
 
