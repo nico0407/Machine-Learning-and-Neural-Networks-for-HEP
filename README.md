@@ -168,6 +168,7 @@ something | somenthing
 
 
 ## Conclusion <a name="Conclusion"></a>
+After many trial and variations of the hyperparamethers of the various model, the main ones that seems to work better are the RFT and the Adaboost, they give as output the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time, and they can be used with a high rate of efficiency for discriminating pion from the rest of the particles in this specific dataset.
 
 
 In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
