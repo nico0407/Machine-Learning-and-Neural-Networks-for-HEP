@@ -158,6 +158,8 @@ ACCURACY                                                                        
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
+scrivi che è per il two hidden layer!!
+
 Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given. Eì VERO?!?!?
 For each step was implemented the computation and the conseguent plot of validation and training curve and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
 First of all what changed was the fraction of the whole data for training the model, that goes from 10% to 100%, leaving validation and testing data sets unaltered.
