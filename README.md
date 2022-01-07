@@ -136,8 +136,11 @@ Moreover was applied a change contemporary in the number of nodes for each layer
 
 This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
 
-There is also the implementation of an other Neural Network to improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
+Even though the two layer neural network worked well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
 Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
+
+It has been runned for 50, 100, 200, 400 epochs and after the 100 one the values of training accuracy and testing one starts to separate one from the other.
+So in that case the model have to be siymplified up to a number of epoch of run not higher than 100.
 
 ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
@@ -173,7 +176,10 @@ Many attempts have been made using machine learning models and neural network mo
 
 This was done using tools like cross validation techniques, implementign dropout layers in the NN network, using testing and validation datasets, trying to simplify the model when necessare.
 
-After many trial and variations of the hyperparamethers of the various model, the main ones that seems to work better are the RFT and the Adaboost, they give as output the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time, and they can be used with a high rate of efficiency for discriminating pion from the rest of the particles in this specific dataset.
+After many trial and variations of the hyperparamethers of the various model, the ones that seems to work better are the RFT and the Adaboost, they give the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time. 
+
+Regarding the neural network implementation, is appreciable to see how the one layer model do not work enough well on discrimination, given the poor value of testing on the runt model with various optimizer. Instead the two hidden layer one works well, and has appropiate learing curves with enough good result in training and validation accuracy and also in testing score.
+The last one seems to overfit over the 100th epoch of run approximatevely.
 
 
 In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
