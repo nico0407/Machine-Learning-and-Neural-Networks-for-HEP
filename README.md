@@ -102,12 +102,15 @@ The project present also an other comparison between models. In this case was ap
 In that case the model was fed by step of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
-![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png "text")
-
 Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
 Also in that case is presented just one case, the rest are available in the images folder section of the repository.
 
-![alt-text](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curve_training_changing/ROC_RFC10.png)
+
+
+Learning curve                                                                                                  |  ROC
+:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curve_training_changing/ROC_RFC10.png)
+
 
 
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
