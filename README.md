@@ -13,7 +13,7 @@ Complexity and learning curve analyses are part of the visual analytics tools th
     - [ML comparison variating training dataset size](#MLcomparisonvariatingtrainingdatasetsize)
     - [Neural Network performance](#NeuralNetworkperformance)
     - [Neural Network performance variating training dataset size](#NeuralNetworkperformancevariatingtrainingdatasetsize)
--[Conclusion](#Conclusion)
+- [Conclusion](#Conclusion)
 
 ## About the project <a name="About"></a>
 
