@@ -13,7 +13,7 @@ Complexity and learning curve analyses are part of the visual analytics tools th
     - [ML comparison variating training dataset size](#MLcomparisonvariatingtrainingdatasetsize)
     - [Neural Network performance](#NeuralNetworkperformance)
     - [Neural Network performance variating training dataset size](#NeuralNetworkperformancevariatingtrainingdatasetsize)
-
+-[Conclusion](#Conclusion)
 
 ## About the project <a name="About"></a>
 
@@ -167,7 +167,7 @@ something | somenthing
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/toality_fitting_modification.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/toality_fitting_modificationROC.png)
 
 
-
+## About the project <a name="Conclusion"></a>
 
 
 In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
