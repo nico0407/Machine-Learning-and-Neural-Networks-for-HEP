@@ -53,9 +53,9 @@ The library used are:
 + Tensorflow
 
 The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'(electrons, protons and kaons) id into 0.
-Then given the extreme number of rows in first analysis were considered just the first 50000 ones.
+Then given the extreme number of rows in first analysis were considered just the first 50000.
 
-In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column whose role is as a target to understand is the classification is done in the right way or not, instead the other one whas inside all the other six remanent columns.
+In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column that plays the role of the target to understand if the classification is done in the right way or not, instead in the other one there were inside all the other six remanent columns.
 Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension.
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
