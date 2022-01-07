@@ -112,7 +112,9 @@ Also in that case is presented just one case, the rest are available in the imag
 
 
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
-The study was done also using neural network models, and in thi section some functions were defined.
+The study was done also using neural network models.
+
+Firstly was built a model with just one hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. sequently the following functions were defined:
 
 + A function for building the model. In particular this provides two dense layer interprised by dropout layers. This function allows to choose the number of nodes for both of the hidden layers, the learing rate, the dropout probability and even the oprimizer function. At the end it also compile the model.
 + An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
