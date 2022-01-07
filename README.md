@@ -59,7 +59,6 @@ In such a way the dataframe was more usable for a machine learning implementatio
 Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension.
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
-This validation process gives information that helps us tune the model’s hyperparameters and configurations accordingly.
 The model is trained on the training set, and, simultaneously, the model evaluation is performed on the validation set after every epoch.
 The main idea of splitting the dataset into a validation set is to prevent our model from overfitting i.e., the model becomes really good at classifying the samples in the training set but cannot generalize and make accurate classifications on the data it has not seen before. 
 
@@ -80,14 +79,14 @@ The learning curve represent the variation of the accuracy of the model in funct
 Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples.
 
 In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting.
-At the end of the fitting process the discrepance between the two has to be quite low and has to decrease with the rinning time in order to have a good working model.
+At the end of the fitting process the discrepance between the two has to be quite low and has to decrease with the running time in order to have a good working model.
 
 put the bias and variance
 
-For each model is also provided the ROC curve 
+For each model is also provided the ROC curve.
 
 
-At the end the accuracy was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
+At the end, the accuracy score of every model was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
 Was choosen to use also the latter one because combine inside two other metrix such as recall_score and precision_score, so the result of f1_score will be high only if both recall and precision are high.
  
 
