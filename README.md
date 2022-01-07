@@ -168,6 +168,11 @@ something | somenthing
 
 
 ## Conclusion <a name="Conclusion"></a>
+The study done was aimed to discriminate on which could be the best way to classificate pion from the other particles in this specific dataset.
+Many attempts have been made using machine learning models and neural network models varying hyperparameters and computing the efficiency of every model trying to avoid both overfitting of the models. 
+
+This was done using tools like cross validation techniques, implementign dropout layers in the NN network, using testing and validation datasets, trying to simplify the model when necessare.
+
 After many trial and variations of the hyperparamethers of the various model, the main ones that seems to work better are the RFT and the Adaboost, they give as output the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time, and they can be used with a high rate of efficiency for discriminating pion from the rest of the particles in this specific dataset.
 
 
