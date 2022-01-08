@@ -21,8 +21,8 @@ Complexity and learning curve analyses are part of the visual analytics tools th
 The Dataset used, 'pid-5M' is a dataset available online and downloaded from Kaggle's dataset page. (https://www.kaggle.com/naharrison/particle-identification-from-detector-responses)
 
 That's a simplified dataset of a GEANT based simulation for electron-proton inelastic scattering measured by a particle detector system.
-It simulates in the final state four particle types with an id number associated - positron (-11), pion (211), kaon (321), and proton (2212); six detector responses. Some detector responses are zero due to detector inefficiencies or incomplete geometric coverage of the detector.
-Is composed of 5000000 rows and 7 columns:
+It simulates in the final state four particle types with an id number associated(positron (-11), pion (211), kaon (321), and proton (2212)) and six detector responses. Some detector responses are zero due to detector inefficiencies or incomplete geometric coverage of the detector.
+Is composed of 5000000 rows of values and 7 columns:
 + ID
 + Momentum(GeV/c)
 + Theta angle(rad)
@@ -31,15 +31,18 @@ Is composed of 5000000 rows and 7 columns:
 + Inner energy(GeV)
 + Outer energy(GeV)
 
+Here are plotted the distribution of the six detector responses.
+
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_hinsto.png)
 
 Is also reported the following plot feaguring the beta value(v/c) of a particle against the momentum of this one.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_betavsmomentum.png)
 
-It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. In HEP is a widley used plot for making cuts in the domain and discriminate particles one from the others. Particular difficulties is between electron and pion, in that case also for lack of statistics.
+It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. This behaviour is explained by the different values of masses for the particles, and so, for the same values of the momenta the beta they have different values of beta.
+Particular difficulties is between the discrimination though electron and pion, in that case also evidentiate by the lack of statistics.
 
-The rest of the images are left into the specific folder of Data visualization
+The rest of the images concerning dataset analysis are left into the specific folder of Data visualization.
 
 ## Implementation <a name="Implementation"></a>
 A juppiter notebook was used for a better manipolation of the script. Due to the possibility to run the code piece by piece it was possible to do more test on the models accuracy without run everytime the whole file given the huge structure of this one.
@@ -52,10 +55,9 @@ The library used are:
 + Keras
 + Tensorflow
 
-The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'(electrons, protons and kaons) id into 0.
-Then given the extreme number of rows in first analysis were considered just the first 50000.
+The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'id into 0 (for proton, electrons and kaons), and given the extreme number of rows, in first analysis were considered just the first 50000 values.
 
-In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column that plays the role of the target to understand if the classification is done in the right way or not, instead in the other one there were inside all the other six remanent columns.
+In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column that plays the role of the target to quantify if the training is done in the right way or not, instead in the other one(x) there were inside all the other six remanent columns.
 Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension.
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
@@ -63,6 +65,8 @@ The model is trained on the training set, and, simultaneously, the model evaluat
 The main idea of splitting the dataset into a validation set is to prevent our model from overfitting i.e., the model becomes really good at classifying the samples in the training set but cannot generalize and make accurate classifications on the data it has not seen before. 
 
 The test set is a separate set of data used to test the model after completing the training.
+
+The project was divided in two main part. The first one focused on the use of machine learning algoritms, and the second one instead has inside the implementation of a neural network model. 
 
 ### ML model comparison <a name="MLmodelcomparison"></a>
 The models utilized were the following:
