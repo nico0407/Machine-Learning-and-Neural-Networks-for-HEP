@@ -189,15 +189,16 @@ something | somenthing
 In that final case are plotted together training, validation and testing scores.
 
 ## Conclusion <a name="Conclusion"></a>
-The study done was aimed to discriminate on which could be the best way to classificate pion from the other particles in this specific dataset.
-Many attempts have been made using machine learning models and neural network models varying hyperparameters and computing the efficiency of every model trying to avoid both overfitting of the models. 
+The study done was aimed to discriminate which could be the best way to classify pion from the other particles in this specific dataset.
+Many attempts have been made using machine learning models and neural network models varying hyperparameters and computing the efficiency of every model trying to avoid overfitting. 
 
-This was done using tools like cross validation techniques, implementign dropout layers in the NN network, using testing and validation datasets, trying to simplify the model when necessare.
+This was done using tools like cross validation techniques, implementign dropout layers in the neural network, using testing and validation datasets, trying to simplify the model when necessare.
 
-After many trial and variations of the hyperparamethers of the various model, the ones that seems to work better are the RFT and the Adaboost, they give the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time. 
+After many trial and variations of the hyperparamethers of the various model, the ones that seems to work better are the Random forest classifier and the Adaboost, they give the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time. Respectevely of  
 
-Regarding the neural network implementation, is appreciable to see how the one layer model do not work enough well on discrimination, given the poor value of testing on the runt model with various optimizer. Instead the two hidden layer one works well, and has appropiate learing curves with enough good result in training and validation accuracy and also in testing score.
+Regarding the neural network implementation, is appreciable to see how the one layer model do not work enough well on discrimination, given the poor value of testing on the model. Instead the multilayer perceptron works well, and has appropiate learing curves with enough good result in training and validation accuracy and also in testing score.
 The last one seems to overfit over the 100th epoch of run approximatevely.
+
 
 
 In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
