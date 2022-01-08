@@ -175,7 +175,7 @@ So in that case is not only changing the training set, but all the available amo
 
 something | somenthing
 :-------:|:----------:|
-![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot2.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
 
 
 ## Conclusion <a name="Conclusion"></a>
