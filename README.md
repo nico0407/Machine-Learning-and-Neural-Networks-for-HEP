@@ -68,6 +68,8 @@ The test set is a separate set of data used to test the model after completing t
 
 The project was divided in two main part. The first one focused on the use of machine learning algoritms, and the second one instead has inside the implementation of a neural network model. 
 
+------
+
 ### ML model comparison <a name="MLmodelcomparison"></a>
 The models utilized were the following:
 + Decision Tree Classifier, used with both gini and entropy criterion
@@ -99,6 +101,7 @@ accuracy_score                                                                  
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare1.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/comparison/compare2.png "right")
 
+-----
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
@@ -115,7 +118,7 @@ Learning curve                                                                  
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/training_variations/knn10.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curve_training_changing/ROC_RFC10.png)
 
-
+--------
 
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
@@ -159,6 +162,8 @@ ACCURACY                                                                        
 ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq100ROC.png)
+
+--------
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
