@@ -2,7 +2,7 @@
 
 Collection of different Machine Learning models and neural network structures applied to a particle dataset using Keras, Tensorflow and Sklearn.
 The aim of the project is to focus on how to make the better choice of a suitable ML algorithm.
-Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the merits of various ML algorithms.
+Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the various ML algorithms.
 
 
 # Table of Contents
@@ -39,7 +39,7 @@ Is also reported the following plot feaguring the beta value(v/c) of a particle 
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/Data_visualisation/Data_betavsmomentum.png)
 
-It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. This behaviour is explained by the different values of masses for the particles, and so, for the same values of the momenta the beta they have different values of beta.
+It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. This different behaviour is due to the different values of masses particles, and so, for the same values of the momenta, the beta value is different.
 Particular difficulties is between the discrimination though electron and pion, in that case also evidentiate by the lack of statistics.
 
 The rest of the images concerning dataset analysis are left into the specific folder of Data visualization.
@@ -79,17 +79,16 @@ The models utilized were the following:
 + SGDC Classifier
 + Rnadom Forest Classifier
 
-For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot present two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
+For each model, a variation of hyperparameters was implemented, and after each trial the learning curves were plotted, a red one representing the learning curve for the training dataset, and in blue the validation one.
 The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
-Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which values of hyperparameter choose could be the most suitable one..
+Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which choose of hyperparameter could be the most suitable one.
 
-In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting.
-At the end of the fitting process the discrepance between the two has to be quite low and has to decrease with the running time in order to have a good working model.
+In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting. Also the test set can play an important role in understanding the goodness of the model.
 
 put the bias and variance
 
-For each model udsed is also provided the ROC curve with the relative computation of the area under the curve (auc).
+For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc).
 
 
 At the end, the accuracy score of every model was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
@@ -105,12 +104,11 @@ accuracy_score                                                                  
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
-The project present also an other comparison between models. In this case was applied a cut in the dataset available for training each model.
-In that case the model was fed by step of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
+The project also present an other comparison between models. In this case was applied a modification in the dataset available for training each model. Specifically this one was setted to sero and then added by a fraction of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
 Moreover at each step it has been computed the ROC curve relative to the percentage of the training data fed.
-Also in that case is presented just one case, the rest are available in the images folder section of the repository.
+Also in that case is presented just one model, the rest are available in the images folder section of the repository.
 
 
 
@@ -123,9 +121,9 @@ Learning curve                                                                  
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
 
-Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. sequently the following functions were defined:
+Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. Sequently the following functions were defined:
 
-+ A function for building the model. In particular this provides one dense layer, and each layer eas interprised by dropout layers. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
++ A function for building the model. In particular this provides one dense layer, and each layer was interprised by dropout layers. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
 + An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
 + In the last section is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has an enough good predictive power.
 
@@ -137,15 +135,15 @@ ACCURACY                                                                        
 
 
 
-After some trial of esecution, was done a comparison between models built with different oprimizer, both with the use of the evaluate function, described in the testing section above, and with the f1_score function.
+After some trial of esecution, was done a comparison between models built with different oprimizer, both with the use of the evaluate function, described in the testing section above, and with the f1_score function. Is evident the discrepancy between the SGD optimizer model adnd the other two.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
-Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up as the number of epochs of run increase Can be seen in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25, while the variation of the number of nodes is in the x-axis.
+Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up as the number of epochs of run increase Can be seen in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25, while the variation of the number of neurons is in the x-axis.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
-The neural network built with Adam optimizer works well in prediction, good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. evaluation score is about 0.976??
+The neural network built with Adam optimizer works well in prediction, good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. The accuracy of training and testing are in agreement with a score of 0.97
 
 This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
 
