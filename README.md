@@ -72,24 +72,24 @@ The project was divided in two main part. The first one focused on the use of ma
 
 ### ML model comparison <a name="MLmodelcomparison"></a>
 The models utilized were the following:
-+ Decision Tree Classifier, used with both gini and entropy criterion
++ Decision Tree Classifier, with both gini and entropy criterion
 + Ada Boost Classifier
 + Logistic Regression
 + K neighbors Classifier
 + SGDC Classifier
 + Rnadom Forest Classifier
 
-For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot has two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
+For each model a variation of hyperparameters was implemented, and after each trial the learning curves were plotted. In particular at each change the plot present two curves, a red one representing the learning curve for the training dataset, and in blue the validation one.
 The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
-Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples.
+Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which values of hyperparameter choose could be the most suitable one..
 
 In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting.
 At the end of the fitting process the discrepance between the two has to be quite low and has to decrease with the running time in order to have a good working model.
 
 put the bias and variance
 
-For each model is also provided the ROC curve.
+For each model udsed is also provided the ROC curve with the relative computation of the area under the curve (auc).
 
 
 At the end, the accuracy score of every model was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
@@ -109,7 +109,7 @@ The project present also an other comparison between models. In this case was ap
 In that case the model was fed by step of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
-Moreover at each step it's benn computed the ROC curve relative to the percentage of the training data fed.
+Moreover at each step it has been computed the ROC curve relative to the percentage of the training data fed.
 Also in that case is presented just one case, the rest are available in the images folder section of the repository.
 
 
