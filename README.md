@@ -123,9 +123,9 @@ Learning curve                                                                  
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
 
-Firstly was built a model with just one hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. sequently the following functions were defined:
+Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. sequently the following functions were defined:
 
-+ A function for building the model. In particular this provides two dense layer interprised by dropout layers. This function allows to choose the number of nodes for both of the hidden layers, the learing rate, the dropout probability and even the oprimizer function. At the end it also compile the model.
++ A function for building the model. In particular this provides one dense layer, and each layer eas interprised by dropout layers. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
 + An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
 + In the last section is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has an enough good predictive power.
 
@@ -137,11 +137,11 @@ ACCURACY                                                                        
 
 
 
-After some trial of esecution, was done a comparison between the oprimizer, both with the use of the evaluate function described in the testing section above and with the f1_score function.
+After some trial of esecution, was done a comparison between models built with different oprimizer, both with the use of the evaluate function, described in the testing section above, and with the f1_score function.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
-Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up, and is reported in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25.
+Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up as the number of epochs of run increase Can be seen in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25, while the variation of the number of nodes is in the x-axis.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
@@ -149,10 +149,10 @@ The neural network built with Adam optimizer works well in prediction, good valu
 
 This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
 
-Even though the two layer neural network worked well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with tree hydden layer devided by a drop out one.
-Also here it's been done a study on the better value for the hyperparameters, testing the model variating the number of neuron for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
+Even though the one layer neural network(also known as multilayer perceptron(MLP)) worked well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hydden layer devided by a drop out one.
+Also here it's been done a study on the better value for the hyperparameters, testing the model in variation of neuron number for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
 
-It has been runned for 50, 100, 200, 400 epochs and after the 100 one the values of training accuracy and testing one starts to separate one from the other.
+It has been runned for 50, 100, 200, 400 epochs and after the 100nt one the values of training accuracy and testing starts to separate one from the other.
 So in that case the model have to be siymplified up to a number of epoch of run not higher than 100.
 
 ACCURACY                                                                                                  |  LOSS |ROC
@@ -167,10 +167,10 @@ ACCURACY                                                                        
 
 ### Neural Network performance variating training dataset size <a name="NeuralNetworkperformancevariatingtrainingdatasetsize"></a>
 
-scrivi che è per il two hidden layer!!
+The variation of the available training size has been done also for the neural network section of the project, specifically only for the MLP.
 
-Also in the neural network section was done a variation in the training dataset at step af 10% of the totality of the data given. Eì VERO?!?!?
-For each step was implemented the computation and the conseguent plot of validation and training curve and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
+The usable training set was changed, and starting from zero, it was increased by a number of step of 10% of the totality of the data available. Eì VERO?!?!?
+For each step was implemented the computation and the conseguent plot of validation and training curve, and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
 First of all what changed was the fraction of the whole data for training the model, that goes from 10% to 100%, leaving validation and testing data sets unaltered.
 
 learning curves | ROC
@@ -186,6 +186,7 @@ something | somenthing
 :-------:|:----------:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot3.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
 
+In that final case are plotted together training, validation and testing scores.
 
 ## Conclusion <a name="Conclusion"></a>
 The study done was aimed to discriminate on which could be the best way to classificate pion from the other particles in this specific dataset.
