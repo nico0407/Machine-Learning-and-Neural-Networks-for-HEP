@@ -84,9 +84,9 @@ The learning curve represent the variation of the accuracy of the model in funct
 
 Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which choose of hyperparameter could be the most suitable one.
 
-In particular one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other poxible data sample. A possible way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting. Also the test set can play an important role in understanding the goodness of the model.
+In principle one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other possible data sample. A way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting. Also the test set can play an important role in understanding the goodness of the model.
 
-put the bias and variance
+After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used, togheter with the cross validation function of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a limited dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, whilst all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
 
 For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc).
 
