@@ -64,7 +64,7 @@ training : validation : testing = 70 : 15 : 15
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
 The model is trained on the training set, and, simultaneously, the model evaluation is performed on the validation set after every epoch.
-The main idea of splitting the dataset into a validation set is to prevent our model from overfitting i.e., the model becomes really good at classifying the samples in the training set but cannot generalize and make accurate classifications on the data it has not seen before. 
+The main idea of splitting the dataset into a validation and test set is to prevent our model from overfitting i.e., the model becomes really good at classifying the samples in the training set but cannot generalize and make accurate classifications on the data it has not seen before. 
 
 The test set is a separate set of data used to test the model after completing the training.
 
@@ -81,7 +81,7 @@ The models utilized were the following:
 + SGDC Classifier
 + Rnadom Forest Classifier
 
-For each model, a variation of hyperparameters was implemented, and after each trial the learning curves were plotted, a red one representing the learning curve for the training dataset, and in blue the validation one.
+For some models, a variation of hyperparameters was implemented, and after each trial the learning curves were plotted, a red one representing the learning curve for the training dataset, and in blue the validation one.
 The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
 varying maximum depth                                                                                                |  varying minimum sample leaf
@@ -93,7 +93,7 @@ Confronting the two curves one can check if, at the end of the time of training,
 
 In principle one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other possible data sample. A way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy between the two do not vanish, it can be a case of overfitting. Also the test set play an important role in understanding the goodness of the model.
 
-After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough the predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used, togheter with the cross validation function of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a limited dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, while all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
+After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough the predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used to compute the accuracy, togheter with the cross validation functions of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, while all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
 
 For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc). In the following are reported an example.
 
@@ -131,7 +131,9 @@ Learning curve                                                                  
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
 
-Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. Sequently the following functions were defined:
+Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. 
+
+Sequently the following functions were defined:
 
 + A function for building the model. In particular this provides one hidden layer, and each layer was interprised by dropout layer. This function allows to choose values of the learing rate, the dropout probability, the number of neurons for both the input and the hidden layer and even the choice for the optimizer. At the end it also compile the model.
 + An other function was built for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint, saving the model values step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
