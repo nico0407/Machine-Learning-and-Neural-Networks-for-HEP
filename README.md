@@ -181,7 +181,7 @@ So in that case is not only varying the training set, but all the available amou
 
 something | somenthing
 :-------:|:----------:|
-![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot3.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/l.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/i.png)
 
 In that final case are plotted together training, validation and testing scores, as shown in the plot legend. The values of the three scores are 
 
