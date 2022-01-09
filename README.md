@@ -84,6 +84,11 @@ The models utilized were the following:
 For each model, a variation of hyperparameters was implemented, and after each trial the learning curves were plotted, a red one representing the learning curve for the training dataset, and in blue the validation one.
 The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
+accuracy_score                                                                                                  |  f1_score
+:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/DTCgini_variating_max%20depth.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/DTCgini_variating%20min_sample_leaf.png)
+
+
 Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which choose of hyperparameter could be the most suitable one.
 
 In principle one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other possible data sample. A way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy between the two do not vanish, it can be a case of overfitting. Also the test set play an important role in understanding the goodness of the model.
