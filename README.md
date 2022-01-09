@@ -84,7 +84,7 @@ The models utilized were the following:
 For each model, a variation of hyperparameters was implemented, and after each trial the learning curves were plotted, a red one representing the learning curve for the training dataset, and in blue the validation one.
 The learning curve represent the variation of the accuracy of the model in function of some paramethers(e.g. the minimum sample leaf or the maximum depth in the case of a decison tree classifier)
 
-accuracy_score                                                                                                  |  f1_score
+varying maximum depth                                                                                                |  varying minimum sample leaf
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/DTCgini_variating_max%20depth.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/DTCgini_variating%20min_sample_leaf.png)
 
@@ -95,8 +95,11 @@ In principle one can have cases of overfitting, when the model approximate too w
 
 After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough the predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used, togheter with the cross validation function of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a limited dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, while all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
 
-For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc).
+For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc). In the following are reported an example.
 
+Ada boost                                                                                               |  DTC
+:--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROC_AB.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROCDTCgini.png)
 
 At the end, the accuracy score of every model was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
 Was choosen to use also the latter one because combine inside two other metrix such as recall_score and precision_score, so the result of f1_score will be high only if both recall and precision are high.
