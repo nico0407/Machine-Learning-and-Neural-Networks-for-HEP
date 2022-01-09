@@ -99,7 +99,7 @@ For each model udsed is also provided the ROC curve with the relative computatio
 
 Ada boost                                                                                               |  DTC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:
-![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROC_AB.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROCDTCgini.png)
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROC_AB.png)  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/model_comparison/ROC_curves/ROCDTCentropy.png)
 
 At the end, the accuracy score of every model was computed via the function "accuracy_score" and also via the "f1_score", the results are reported below.
 Was choosen to use also the latter one because combine inside two other metrix such as recall_score and precision_score, so the result of f1_score will be high only if both recall and precision are high.
