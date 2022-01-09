@@ -159,7 +159,9 @@ Even though the one hidden layer neural network(also known as multilayer percept
 Also here it's been done a study on the better value for the hyperparameters, testing the model in variation of neuron number for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
 
 It has been runned for 50, 100, 200, 400 epochs and after the 100nt one the values of training accuracy and testing starts to separate one from the other.
-So in that case the model have to be symplified up to a number of epoch of run not higher than 100.
+Specifically the training score starts to became higher than the validation one, moreover also the score on the test dataset is pretty lower respect to the testing one. That's a case of overfitting of the model.
+
+That's why in that case the model need to be symplified up to a number of epoch of run not higher than 100. For such values of hyperparamethers training and test score are almost the same and the accuracy of the model is up to 97.4%
 
 ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
@@ -178,7 +180,7 @@ The variation of the available training size has been done also for the neural n
 The usable training set was changed, and starting from zero, it was increased by a number of step of 10% of the data available.
 For each step was done the computation and the conseguent plot of validation and training curve, and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set, that goes from 10% to 100% of the data available, leaving validation and testing data sets unaltered.
 
-learning curves | ROC
+Learning curves | ROC
 :-------:|:----------:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot3.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
 
@@ -187,11 +189,11 @@ After this trial then, the fraction of the total data available for training, te
 
 So in that case is not only varying the training set, but all the available amount of data for building the model.
 
-something | somenthing
+Learning curves | ROC
 :-------:|:----------:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/l.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/i.png)
 
-Is apreciable an increasing of accuracy with the increasing of the percentage of the data available, starting with a low score in the initial step due to the too low statistiscs, reaching a plateau in higher percentage.
+Is apreciable an increasing of accuracy with the increasing of the percentage of the data available, starting with a low score in the initial step due to the too low statistiscs, reaching a plateau in higher percentage. Therefore the choice of cutting the whole datset up to just 50000 rows was a quite good approximation.
 
 Moreover in that final case are plotted together training, validation and testing scores, as shown in the plot legend. The values of the three scores remain similar after every changing step.
 
