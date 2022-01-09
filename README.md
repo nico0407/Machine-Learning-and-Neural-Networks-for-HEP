@@ -106,7 +106,7 @@ accuracy_score                                                                  
 
 ### ML comparison variating training dataset size <a name="MLcomparisonvariatingtrainingdatasetsize"></a>
 
-The project also present an other comparison between models. In this case was applied a modification in the dataset available for training each model. Specifically this one was setted to sero and then added by a fraction of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
+The project also present an other comparison between models. In this case was applied a modification in the dataset available for training each model. Specifically this one was setted to zero and then implemented by adding a fraction of 10% of the data at the time, and at each step was calculated and plotted the learning curve for the training and validation data set, until the model reach the 100% of the data fed for training. 
 For semplicity is reported just an example of this, the other images are available in the specific repository section.
 
 Moreover at each step it has been computed the ROC curve relative to the percentage of the training data fed.
@@ -123,11 +123,11 @@ Learning curve                                                                  
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
 
-Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between accuracy of training and the score af testing. Sequently the following functions were defined:
+Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. Sequently the following functions were defined:
 
-+ A function for building the model. In particular this provides one dense layer, and each layer was interprised by dropout layers. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
-+ An other section for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint model, saving the model step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
-+ In the last section is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has an enough good predictive power.
++ A function for building the model. In particular this provides one hidden layer, and each layer was interprised by dropout layer. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
++ An other function was built for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint, saving the model values step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
++ In the last function is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has enough predictive power.
 
 Here is reported an example of the Adam optimizer with the corrispective ROC curve.
 
@@ -137,7 +137,7 @@ ACCURACY                                                                        
 
 
 
-After some trial of esecution, was done a comparison between models built with different oprimizer, both with the use of the evaluate function, described in the testing section above, and with the f1_score function. Is evident the discrepancy between the SGD optimizer model adnd the other two.
+After some trial of esecution, was done a comparison between models built with different oprimizer, both with the use of the evaluate function, described in the testing section above, and with the f1_score function. Is evident the discrepancy between the SGD optimizer model and the other two.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
@@ -145,9 +145,7 @@ Moreover was applied a change contemporary in the number of nodes for each layer
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
-The neural network built with Adam optimizer works well in prediction, good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. The accuracy of training and testing are in agreement with a score of 0.97
-
-This is followed by a section in wich there is a variation of the hyperparameters of the model(expecially for the SGD one), such as the number of nodes in each hidden layer and the learning rate, trying to evidentiate some specific values for reduce the complexity of the model built.
+The neural network built with Adam optimizer works well in prediction. Good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. The accuracy of training and testing are in agreement with a score of 0.97
 
 Even though the one layer neural network(also known as multilayer perceptron(MLP)) worked well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hydden layer devided by a drop out one.
 Also here it's been done a study on the better value for the hyperparameters, testing the model in variation of neuron number for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
@@ -169,24 +167,23 @@ ACCURACY                                                                        
 
 The variation of the available training size has been done also for the neural network section of the project, specifically only for the MLP.
 
-The usable training set was changed, and starting from zero, it was increased by a number of step of 10% of the totality of the data available. Eì VERO?!?!?
-For each step was implemented the computation and the conseguent plot of validation and training curve, and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set.
-First of all what changed was the fraction of the whole data for training the model, that goes from 10% to 100%, leaving validation and testing data sets unaltered.
+The usable training set was changed, and starting from zero, it was increased by a number of step of 10% of the data available.
+For each step was done the computation and the conseguent plot of validation and training curve, and the construction of the ROC curve. Concerning the latter ones is evident how it improves increasing the trainig data set, that goes from 10% to 100% of the data available, leaving validation and testing data sets unaltered.
 
 learning curves | ROC
 :-------:|:----------:|
-![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/variation_trainingset_lr0001ROC.png)
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot3.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
 
 
 After this trial then, the fraction of the total data available for training, testing, and validation was changed simultaneously, manteining the proportions decided at the beginning the same(training : validation : testing = 70 : 15 : 15).
 
-So in that case is not only changing the training set, but all the available amount of data for building the model.
+So in that case is not only varying the training set, but all the available amount of data for building the model.
 
 something | somenthing
 :-------:|:----------:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/plot3.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/cinque.png)
 
-In that final case are plotted together training, validation and testing scores.
+In that final case are plotted together training, validation and testing scores, as shown in the plot legend. The values of the three scores are 
 
 ## Conclusion <a name="Conclusion"></a>
 The study done was aimed to discriminate which could be the best way to classify pion from the other particles in this specific dataset.
