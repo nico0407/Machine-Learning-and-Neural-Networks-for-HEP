@@ -183,7 +183,9 @@ something | somenthing
 :-------:|:----------:|
 ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/l.png)    | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/variation_training_set/i.png)
 
-In that final case are plotted together training, validation and testing scores, as shown in the plot legend. The values of the three scores are 
+Is apreciable an increasing of accuracy with the increasing of the percentage of the data available, starting with a low score in the initial step due to the too low statistiscs, reaching a plateau in higher percentage.
+
+Moreover in that final case are plotted together training, validation and testing scores, as shown in the plot legend. The values of the three scores remain similar after every changing step.
 
 ## Conclusion <a name="Conclusion"></a>
 The study done was aimed to discriminate which could be the best way to classify pion from the other particles in this specific dataset.
