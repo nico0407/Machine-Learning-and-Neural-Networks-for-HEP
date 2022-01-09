@@ -199,22 +199,3 @@ Regarding the neural network implementation, is appreciable to see how the one l
 
 The last model with two hidden layer instead seems to work well in accyracy score up to 100 epochs of run, reporting a value of accuracy of 97.4%.
 After the 100th epoch of run approximatevely the model seems to overfit.
-
-
-
-In this section, we have begun to explore the concept of model validation and hyperparameter optimization, focusing on intuitive aspects of the bias–variance trade-off and how it comes into play when fitting models to data. In particular, we found that the use of a validation set or cross-validation approach is vital when tuning parameters in order to avoid over-fitting for more complex/flexible models.
-In later sections, we will discuss the details of particularly useful models, and throughout will talk about what tuning is available for these models and how these free parameters affect model complexity. Keep the lessons of this section in mind as you read on and learn about these machine learning approaches!
-
---------
-
-The model on the left attempts to find a straight-line fit through the data. Because the data are intrinsically more complicated than a straight line, the straight-line model will never be able to describe this dataset well. Such a model is said to underfit the data: that is, it does not have enough model flexibility to suitably account for all the features in the data; another way of saying this is that the model has high bias.
-The model on the right attempts to fit a high-order polynomial through the data. Here the model fit has enough flexibility to nearly perfectly account for the fine features in the data, but even though it very accurately describes the training data, its precise form seems to be more reflective of the particular noise properties of the data rather than the intrinsic properties of whatever process generated that data. Such a model is said to overfit the data: that is, it has so much model flexibility that the model ends up accounting for random errors as well as the underlying data distribution; another way of saying this is that the model has high variance.
-
-
--------
-
-
-For high-bias models, the performance of the model on the validation set is similar to the performance on the training set.
-
-For high-variance models, the performance of the model on the validation set is far worse than the performance on the training set.
-
