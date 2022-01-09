@@ -191,11 +191,11 @@ Moreover in that final case are plotted together training, validation and testin
 The study done was aimed to discriminate which could be the best way to classify pion from the other particles in this specific dataset.
 Many attempts have been made using machine learning models and neural network models varying hyperparameters and computing the efficiency of every model trying to avoid overfitting. 
 
-This was done using tools like cross validation techniques, implementign dropout layers in the neural network, using testing and validation datasets, trying to simplify the model when necessare.
+This was done using tools like cross-validation techniques, implementign dropout layers in the neural network, using testing and validation datasets and trying to simplify the model when necessare.
 
 After many trial and variations of the hyperparamethers of the various model, the ones that seems to work better are the Random forest classifier and the Adaboost, they give the highest value of the f1_score, so contemporaneusly a pretty high value of recall and prediction at the same time. Respectevely with accuracy of 97.5% and 97.3%.
 
 Regarding the neural network implementation, is appreciable to see how the one layer model do not work enough well on discrimination, given the poor value of testing on the model, respect to the training one. Instead the multilayer perceptron works well, and has appropiate learing curves with enough good result in training and validation accuracy and also in testing score. The best one in this case is the model built with the Adam optimizer, with an accuracy level of 97%.
 
-The last model with two hidden layer instead seems to work well in accyracy score up to 100 epochs of run, reporting a value of accuracy of 97.4%.
+The last model with two hidden layer instead seems to work well in accuracy score up to 100 epochs of run, reporting a value of accuracy of 97.4%.
 After the 100th epoch of run approximatevely the model seems to overfit.
