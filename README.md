@@ -157,7 +157,7 @@ Moreover was applied a change contemporary in the number of neurons for each lay
 
 The neural network built with Adam optimizer works well in prediction. Good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. The accuracy of training and testing are in agreement with an accuracy of 97%.
 
-Even though the one hidden layer neural network(also known as multilayer perceptron(MLP)) works well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hydden layer devided by a drop out one.
+Even though the one hidden layer neural network(also known as multilayer perceptron(MLP)) works well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hidden layer devided by a drop out one.
 Also here it's been done a study on the better value for the hyperparameters, testing the model in variation of neuron number for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
 
 It has been runned for 50, 100, 200, 400 epochs and after the 100nt one the values of training accuracy and testing starts to separate one from the other.
