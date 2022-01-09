@@ -1,8 +1,8 @@
 # Uni_project
 
 Collection of different Machine Learning models and neural network structures applied to a particle dataset using Keras, Tensorflow and Sklearn.
-The aim of the project is to focus on how to make the better choice of a suitable ML algorithm.
-Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the various ML algorithms.
+The aim of the project is to focus on how to make the better choice of a suitable algorithm.
+Complexity and learning curve analyses are part of the visual analytics tools that help for comparing the various algorithms.
 
 
 # Table of Contents
@@ -42,7 +42,7 @@ Is also reported the following plot feaguring the beta value(v/c) of a particle 
 It's easy to see how in this plot the pion trace is very different from the kaon and the proton one. This different behaviour is due to the different values of masses particles, and so, for the same values of the momenta, the beta value is different.
 Particular difficulties is between the discrimination though electron and pion, in that case also evidentiate by the lack of statistics.
 
-The rest of the images concerning dataset analysis are left into the specific folder of Data visualization.
+The rest of the images concerning dataset analysis are left into the specific folder of data visualization.
 
 ## Implementation <a name="Implementation"></a>
 A juppiter notebook was used for a better manipolation of the script. Due to the possibility to run the code piece by piece it was possible to do more test on the models accuracy without run everytime the whole file given the huge structure of this one.
@@ -55,10 +55,12 @@ The library used are:
 + Keras
 + Tensorflow
 
-The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id was changed into 1 and the other particles'id into 0 (for proton, electrons and kaons), and given the extreme number of rows, in first analysis were considered just the first 50000 values.
+The aim of the project was to discriminate pions respect to the other particles, so first of all was done a data manipulation on the id values, the pion id(211) was changed into 1 and the other particles'id into 0 (for proton, electrons and kaons), and given the extreme number of rows, in first analysis were considered just the first 50000 values.
 
-In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column that plays the role of the target to quantify if the training is done in the right way or not, instead in the other one(x) there were inside all the other six remanent columns.
-Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension.
+In such a way the dataframe was more usable for a machine learning implementation, in addition the dataframe was splitted into an 'x' and 'y' part. The latter one is the id modified column that plays the role of the target to quantify if the training is done in the right way or not, instead in the other one(x) there were all the other six remanent columns.
+Then was implemented a data splitting into test and train with a test_size equal to 0.30. Soon after, an other splitting was done, dividing the test dataset into a validation and a test one, both with the same dimension. The data subset proportions is the following:
+
+training : validation : testing = 70 : 15 : 15
 
 The validation set is a set of data, separate from the training set, that is used to validate our model performance during training.
 The model is trained on the training set, and, simultaneously, the model evaluation is performed on the validation set after every epoch.
@@ -84,9 +86,9 @@ The learning curve represent the variation of the accuracy of the model in funct
 
 Confronting the two curves one can check if, at the end of the time of training, the model predict well the data samples and which choose of hyperparameter could be the most suitable one.
 
-In principle one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other possible data sample. A way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy do not vanish it can be a case of overfitting. Also the test set can play an important role in understanding the goodness of the model.
+In principle one can have cases of overfitting, when the model approximate too well the training set, and has a low predictive power in any other possible data sample. A way to avoid that is by looking at the behaviour of the learning curves of training and validation. If the accuracy on the training set starts to became higher than the one on the validation set and the discrepancy between the two do not vanish, it can be a case of overfitting. Also the test set play an important role in understanding the goodness of the model.
 
-After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used, togheter with the cross validation function of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a limited dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, whilst all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
+After have fitted the models to the training dataset this were tested in making predictions over the test dataset trough the predict mode of the models. In addition also functions recall_score, precision_score and f1_score were used, togheter with the cross validation function of sklearn, such as cross_val_predict and cross_val_score. Cross validation is a procedure that divides a limited dataset into k non overlapping folds. Each of the folds is given an opportunity to be used as test set, while all other folds collectively are used as a training dataset. A total of k models are fit and evaluated on the k hold-out test sets and the mean performance is reported.
 
 For each model udsed is also provided the ROC curve with the relative computation of the area under the curve(auc).
 
