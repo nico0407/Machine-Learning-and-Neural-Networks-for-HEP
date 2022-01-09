@@ -133,7 +133,7 @@ The study was done also using neural network models.
 
 Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. Sequently the following functions were defined:
 
-+ A function for building the model. In particular this provides one hidden layer, and each layer was interprised by dropout layer. This function allows to choose values of the learing rate, the dropout probability, the number of nodes for both the input and the hidden layer and even the optimizer function. At the end it also compile the model.
++ A function for building the model. In particular this provides one hidden layer, and each layer was interprised by dropout layer. This function allows to choose values of the learing rate, the dropout probability, the number of neurons for both the input and the hidden layer and even the choice for the optimizer. At the end it also compile the model.
 + An other function was built for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint, saving the model values step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
 + In the last function is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has enough predictive power.
 
@@ -149,21 +149,21 @@ After some trial of esecution, was done a comparison between models built with d
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/accuracy/Accuracy1.png)
 
-Moreover was applied a change contemporary in the number of nodes for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up as the number of epochs of run increase Can be seen in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25, while the variation of the number of neurons is in the x-axis.
+Moreover was applied a change contemporary in the number of neurons for each layer and for the number of epochs of run using the Adam optimizer. In that case an improvement in the learning curve shows up as the number of epochs of run increase. Can be seen in the following gif, where the plots are refered to a number of epoch of run respectevely of 5,10 and 25, while the variation of the number of neurons is in the x-axis.
 
 ![alt text](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Variating_numepoch_and_neurons/5zvq2b.gif)
 
 The neural network built with Adam optimizer works well in prediction. Good values of testing score was given in output, in accorrding with the training one, the model do not overfit and seems to have a good predictive power. The accuracy of training and testing are in agreement with a score of 0.97
 
-Even though the one layer neural network(also known as multilayer perceptron(MLP)) worked well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hydden layer devided by a drop out one.
+Even though the one hidden layer neural network(also known as multilayer perceptron(MLP)) works well in prediction, is there also the implementation of an other Neural Network to see if it can improve the performance of the previous one, composed with two hydden layer devided by a drop out one.
 Also here it's been done a study on the better value for the hyperparameters, testing the model in variation of neuron number for each layer and the number of epoch of run. That model was executed for a growing number of epoch, until it came up into overfitting of training data.
 
 It has been runned for 50, 100, 200, 400 epochs and after the 100nt one the values of training accuracy and testing starts to separate one from the other.
-So in that case the model have to be siymplified up to a number of epoch of run not higher than 100.
+So in that case the model have to be symplified up to a number of epoch of run not higher than 100.
 
 ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
-![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq200ROC.png)
+![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq400.png "left")  |  ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq400loss.png "right") | ![alt](https://github.com/nico0407/Uni_project/blob/main/images/NN_model/Sequence/Seq400ROC.png)
 
 ACCURACY                                                                                                  |  LOSS |ROC
 :--------------------------------------------------------------------------------------------------------------:|:---------------------------------------:|:--:|
