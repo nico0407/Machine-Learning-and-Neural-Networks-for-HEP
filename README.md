@@ -131,7 +131,7 @@ Learning curve                                                                  
 ### Neural Network performance <a name="NeuralNetworkperformance"></a>
 The study was done also using neural network models.
 
-Firstly was built a model with no hidend layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. 
+Firstly was built a model with no hidden layer but the results were not good, in particular there was a pretty high discrepancy between training accuracy and the testing one. 
 
 Sequently the following functions were defined:
 
