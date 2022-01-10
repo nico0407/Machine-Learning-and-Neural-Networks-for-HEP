@@ -137,7 +137,7 @@ Sequently the following functions were defined:
 
 + A function for building the model. In particular this provides one hidden layer, and each layer was interprised by dropout layer. This function allows to choose values of the learing rate, the dropout probability, the number of neurons for both the input and the hidden layer and even the choice for the optimizer. At the end it also compile the model.
 + An other function was built for running the model. Has the fit function inside and provide the arbitrary choose of the number of epochs to run and the batch size. Moreover make a checkpoint, saving the model values step by step. While the model is fitted on the training data at the same time is also validated with the validation data set. At the end are ploted together learning curves for training and validation, both for the accuracy and for the loss.
-+ In the last function is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful for determine if a model overfit or underfit, if has enough predictive power.
++ In the last function is implemented the testing for the model with the "evaluate" function that provide a score of the model on the testing data set. That's much useful to determine if a model overfit or underfit, if has enough predictive power.
 
 Here is reported an example of the Adam optimizer with the corrispective ROC curve.
 
